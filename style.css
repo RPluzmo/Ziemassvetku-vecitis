@@ -3,7 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-image: url('grin.png');
+    background-size: cover; /* Attēls pilnībā aizpilda ekrānu */
+    background-position: center; /* Centrs fokusēts */
+    background-repeat: no-repeat; /* Neatkārto attēlu */
+    background-attachment: fixed; /* Attēls paliek vietā, ritinot lapu */
     color: #333;
 }
 
@@ -118,4 +122,3 @@ h1 {
 .success {
     color: green;
 }
-

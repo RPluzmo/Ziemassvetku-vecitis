@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift List</title>
+    <title>gifts.php</title>
     <link rel="stylesheet" href="style.css"> <!-- Pievieno CSS failu -->
     <style>
         /* CSS stilisti */
@@ -43,7 +43,7 @@ $result = $conn->query($sql);
         }
 
         .gift-table th {
-            background-color: #f2f2f2;
+            background-color: rgba(242, 242, 242, 0.9); /* 50% caurspīdīga pelēkā krāsa */
             position: sticky; /* Padara galveni lipīgu */
             top: 0; /* Paliek pie ekrāna augšas */
             z-index: 10; /* Nodrošina, ka galvene būs virs tabulas rindām */
@@ -51,7 +51,7 @@ $result = $conn->query($sql);
         }
 
         .gift-table td {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.8); /* 50% caurspīdīga balta krāsa */
         }
 
         .warning {
@@ -69,7 +69,6 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="container">
-        <h1>Dāvanu saraksts</h1>
         <table class="gift-table">
             <thead>
                 <tr>
