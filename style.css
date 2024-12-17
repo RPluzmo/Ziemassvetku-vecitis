@@ -1,0 +1,121 @@
+/* Pamatstili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+/* Kartiņas */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card-header p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.card-body {
+    padding: 15px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;/*like rindkopas and what not*/
+}
+
+/* Pievieno pāreju uz hover efektu */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+/* Dāvanas, kas ir zem 5 ballēm, būs sarkanā krāsā */
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+/* Dāvanas, kas ir virs vai vienādas ar 5 ballēm, būs zaļā krāsā */
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+/* Vidējā atzīme būs melnā krāsā */
+.avg-grade {
+    color: white;
+}
+/* Tabulas stili */
+.gift-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.gift-table th, .gift-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.gift-table th {
+    background-color: #f2f2f2;
+    position: sticky; /* Padara galveni lipīgu */
+    top: 0; /* Paliek pie ekrāna augšas */
+    z-index: 10; /* Nodrošina, ka galvene būs virs tabulas rindām */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ēna galvenei */
+}
+
+.gift-table td {
+    background-color: #ffffff;
+}
+
+.warning {
+    color: red;
+}
+
+.info {
+    color: blue;
+}
+
+.success {
+    color: green;
+}
+
